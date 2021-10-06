@@ -1,35 +1,34 @@
 body {
-display: grid;
-grid-template-rows: 48px auto 48px;
-height: 100vh ;
+  display: grid;
+  grid-template-rows: 48px auto 48px;
+  height: 100vh;
+  background-color: snow;
 }
 
 main {
-background-color: aquamarine;
-padding: 1rem 0.5rem;
-color: black;
-overflow-y: auto;
+  background-color: rgb(18, 194, 238);
+  padding: 1rem 0.5rem;
+  max-width: 640px;
+  overflow-y: auto;
+  margin: 0 auto;
 }
 
 .navigation-style {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style: none;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
 }
 
+.nav-feature {
+  background-color: snow;
+  border-top: 1px black;
 }
 
-.nav-feature{
-    background-color: blue;
-}
-
-.top-style{
-    font-family: "Roboto",;
-    font-size: 2.2rem;
-    font-weight: lighter;
-    margin-top: 0;
-    text-align: center;
-    color: rgb(26, 204, 228);
-
+.top-style {
+  font-family: "Roboto";
+  font-size: 2.2rem;
+  font-weight: lighter;
+  margin-top: 0;
+  text-align: center;
+  color: rgb(26, 204, 228);
 }
