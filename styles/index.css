@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  background-color: goldenrod;
+  background-color: snow;
   padding: 1rem 0.5rem;
   overflow-y: auto;
   margin: 0 auto;
@@ -45,4 +45,43 @@ main {
   width: 90%;
   max-width: 640px;
   padding: 10px;
+}
+.card {
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 1px 2px hsl(0deg 0% 0% / 0.075), 0 2px 4px hsl(0deg 0% 0% / 0.075),
+    0 4px 8px hsl(0deg 0% 0% / 0.075), 0 8px 16px hsl(0deg 0% 0% / 0.075);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.title {
+  color: forestgreen;
+  font-size: 18px;
+}
+.button__card {
+  display: block;
+  padding: 8px;
+  color: white;
+  background-color: skyblue;
+  text-align: center;
+  cursor: help;
+  width: 50%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+h2 {
+  padding-top: 1rem;
+  font-size: 26px;
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: lighter;
+}
+button:hover {
+  opacity: 0.8;
+  background-color: forestgreen;
 }
