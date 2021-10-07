@@ -16,26 +16,33 @@ main {
 
 .top-style {
   font-family: "Roboto";
+  background-color: forestgreen;
+  width: 100%;
+  height: 100%;
   font-size: 2.2rem;
   font-weight: lighter;
   margin-top: 0;
   text-align: center;
-  color: skyblue;
+  color: snow;
 }
 .nav {
-    display: grid;
-    gap: 2px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .nav ul,
-  .nav li {
-    display: contents;
-  }
-  .nav-link {
-    background: skyblue;
-    text-align: center;
-    padding: 12px 0;
-    color: white;
-    text-decoration: none;
-  }
-
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nav ul,
+.nav li {
+  display: contents;
+}
+.nav-link {
+  background: forestgreen;
+  text-align: center;
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+}
+.cardarea {
+  width: 90%;
+  max-width: 640px;
+  padding: 10px;
+}
