@@ -52,17 +52,12 @@ main {
     0 4px 8px hsl(0deg 0% 0% / 0.075), 0 8px 16px hsl(0deg 0% 0% / 0.075);
   max-width: 500px;
   margin: auto;
-  padding: 10px 0 20px 0;
+  padding: px 0 20px 0;
   text-align: center;
   position: relative;
   border-radius: 4%;
   margin-bottom: 10px;
-  
-}
-.bookmark__card{
-  position: absolute;
-  top: 5px;
-  right: 3px;
+  padding-bottom: 10px;
 }
 
 .title {
@@ -88,15 +83,13 @@ main {
   border-radius: 10px;
 }
 
-.card__tag{
-    padding: 4px 8px;
-    border: 1px solid #e5eaed;
-    border-radius: 20%;
-    margin-top: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    /**color:green;**/
-    
+.card__tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 20%;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 h2 {
@@ -111,7 +104,38 @@ a {
   color: black;
   font-weight: lighter;
 }
-button:hover {
+/*button:hover {
   opacity: 0.8;
   background-color: forestgreen;
+}*/
+
+.bookmark {
+  --color-bookmark: black;
+  border: none;
+  width: 30px;
+  height: 10px;
+  background: var(--color-bookmark);
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.bookmark::after {
+  content: "";
+  border: 15px solid var(--color-bookmark);
+  border-bottom-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.bookmark--active {
+  --color-bookmark: forestgreen;
+}
+
+/* testing area */
+
+.button--active {
+  background: forestgreen;
+  color: white;
 }
