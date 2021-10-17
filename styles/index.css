@@ -27,7 +27,7 @@ main {
 }
 .nav {
   display: grid;
-  gap: 2px;
+  gap: 1px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .nav ul,
@@ -129,13 +129,10 @@ a {
   top: 100%;
 }
 
-.bookmark--active {
+.bookmark__active {
   --color-bookmark: forestgreen;
 }
-
-/* testing area */
-
-.button--active {
-  background: forestgreen;
+.button__active {
+  background: #333;
   color: white;
 }

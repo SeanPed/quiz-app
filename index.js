@@ -6,7 +6,7 @@ cards.forEach((card) => {
   /*Area for toggling Bookmark*/
   const bookmark = getElement("bookmark", card);
   bookmark.addEventListener("click", () => {
-    bookmark.classList.toggle("bookmark--active");
+    bookmark.classList.toggle("bookmark__active");
   });
   /*Area for toggling Answer-Buttons */
   const button = getElement("toggle-answer", card);
@@ -20,16 +20,37 @@ cards.forEach((card) => {
     textHide.classList.toggle("hidden");
 
     /*Area for showing which Nav Button is selected */
-    const buttonHome = document.querySelector(".js-button-home");
-    const buttonBookmarks = document.querySelector(".js-button-bookmarks");
-    const buttonCreate = document.querySelector(".js-button-create");
-    const buttonProfile = document.querySelector(".js-button-profile");
+    const buttonHome = getElement("button-home");
+    const buttonBookmarks = getElement("button-bookmarks");
+    const buttonCreate = getElement("button-create");
+    const buttonProfile = getElement("button-profile");
 
     buttonBookmarks.addEventListener("click", () => {
-      buttonBookmarks.classList.add("button--active");
-      buttonCreate.classList.remove("button--active");
-      buttonHome.classList.remove("button--active");
-      buttonProfile.classList.remove("button--active");
+      buttonBookmarks.classList.add("button__active");
+      buttonCreate.classList.remove("button__active");
+      buttonHome.classList.remove("button__active");
+      buttonProfile.classList.remove("button__active");
+    });
+
+    buttonCreate.addEventListener("click", () => {
+      buttonBookmarks.classList.remove("button__active");
+      buttonCreate.classList.add("button__active");
+      buttonHome.classList.remove("button__active");
+      buttonProfile.classList.remove("button__active");
+    });
+
+    buttonHome.addEventListener("click", () => {
+      buttonBookmarks.classList.remove("button__active");
+      buttonCreate.classList.remove("button__active");
+      buttonHome.classList.add("button__active");
+      buttonProfile.classList.remove("button__active");
+    });
+
+    buttonProfile.addEventListener("click", () => {
+      buttonBookmarks.classList.remove("button__active");
+      buttonCreate.classList.remove("button__active");
+      buttonHome.classList.remove("button__active");
+      buttonProfile.classList.add("button__active");
     });
   });
 });
