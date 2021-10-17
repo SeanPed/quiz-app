@@ -10,66 +10,79 @@
     <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin /> <link
     href=“https://fonts.googleapis.com/css2?family=Roboto&display=swap”
     rel=“stylesheet” />
+    <script> src="index.js"</script>
   </head>
 
   <body>
     <h1 class="top__style">Quiz-App</h1>
     <main class="cardarea">
 
-      <div class="card">
-        <h2>Question 1</h2>
+      <section data-js="card" class="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
+        <h2>Questioncard 1</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-        <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
-      </div>
+        <button class="button__card" data-js="toggle-answer">
+          <span data-js="show">Show</span>
+          <span  data-js="hide" class="hidden">Hide</span>
+          answer
+        </button>
+        <p data-js="answer" class="hidden">Because ipsum dolor sit.</p>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
+        </section>
 
-      <div class="card">
+      <div class="card" data-js="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
         <h2>Question 2</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
+        <p class="hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
       </div>
       <div class="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
         <h2>Question 3</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
       </div>
       <div class="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
         <h2>Question 4</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
       </div>
       <div class="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
         <h2>Question 5</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
       </div>
       <div class="card">
+        <label class="bookmark__card"><a  href=""><img src="images/Bookmark-not-marked.svg" alt=""></a></label>
         <h2>Question 6</h2>
         <p class="title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         <button class="button__card">Show Answer</button>
-        <a href="#">HTML</a>
-        <a href="#">CSS</i></a>
-        <a href="#">JAVASCRIPT</i></a>
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">CSS</span>
+        <span class="card__tag">JAVASCRIPT</span>
       </div>
     </main>
     <nav class="nav">
       <ul role="list">
         <li><a class="nav__link" href=""><img src="images/Home.svg" alt="Homebutton"/></a></span>
-        <li><a class="nav__link" href="bookmarks.html"><img src="images/Bookmark.svg" alt="Bookmarks"/></a></li>
+        <li><a class="nav__link" href="bookmarks.html"><img src="images/bookmarks icon for navigation.svg" alt="Bookmarks"/></a></li>
         <li><a class="nav__link" href=""><img src="images/Create.svg" alt="Create"/></a></li>
         <li><a class="nav__link" href=""><img src="images/Profile.svg" alt="Profile"/></a></li>
       </ul>
