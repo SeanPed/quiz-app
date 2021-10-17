@@ -133,6 +133,7 @@ a {
   --color-bookmark: forestgreen;
 }
 .button__active {
-  background: #333;
+  background:forestgreen;
   color: white;
+  font-weight: 400;
 }
